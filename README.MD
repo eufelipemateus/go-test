@@ -10,6 +10,9 @@ Atualize o aquivo **config.toml** com  email de origem, email de destino e chave
 
 Para executar este projeto baste executar o comando ```bash go run .``` no root do projeto
 
+### Observações
+
+Na segunda vez qaue for excutado o projeto lembre-se de alterar o *generateDB* para false no **config.toml**.
 
 ## Author
 
