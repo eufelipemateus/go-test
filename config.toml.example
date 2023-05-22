@@ -1,0 +1,18 @@
+[app]
+port = ":3001"
+name = "Pagina de Contatos"
+generateDB = true
+views = "views/*"
+[email]
+from = [ seu email]
+to = [ seu email]
+
+[database]
+host = "localhost"
+port = "5432"
+user = "postgres"
+pass = "Postgress2022!"
+name = "postgres"
+
+[sengrid]
+apiKey = [ seu sengrid key]
