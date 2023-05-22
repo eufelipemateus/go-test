@@ -62,9 +62,9 @@ func registerSolicitacao(st *solicitacaoType) {
 		Email: st.Email,
 		Produto: st.Produto,
 		Descricao: st.Descricao,
+		SolcicitaoTypeID: st.SolicitacaoTypeID,
 	}
-
-	s.WithContext(ctx).Create(&sol)
+	s.WithContext(ctx).Create(&sol)	
 }
 
 
@@ -106,9 +106,7 @@ func SsendMail(c *gin.Context) {
 			"message": "Email enviado com Sucesso!",
 		})*/
 
-		if solicitacao.SolicitacaoTypeID == 1 {
-			registerSolicitacao(solicitacao)
-		}
+		registerSolicitacao(solicitacao)
 
 		solicitacao = &solicitacaoType{}
 
